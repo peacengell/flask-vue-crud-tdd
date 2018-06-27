@@ -6,7 +6,8 @@ RUN pip install -r requirements.txt
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get install -y nodejs \
-    && npm install -g vue-cli@2.9.3
+    && npm install -g vue-cli@2.9.3 \
+    && npm install axios@0.18.0 --save
 
 CMD ["/bin/bash"]
 ENTRYPOINT [ "python", "app.py" ]
