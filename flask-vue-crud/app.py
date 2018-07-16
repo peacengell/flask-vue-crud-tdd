@@ -42,6 +42,8 @@ def ping_pong():
 
 @app.route('/books', methods=['GET', 'POST'])
 def all_books():
+    """This route for all books and use GET and POST methods:"""
+
     response_object = {'status': 'success'}
     if request.method == 'POST':
         post_data = request.get_json()
