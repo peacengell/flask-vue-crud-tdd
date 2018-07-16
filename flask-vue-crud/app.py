@@ -37,6 +37,12 @@ CORS(app)
 
 @app.route('/ping', methods=['GET'])
 def ping_pong():
+    """[Ping pong Route Testing]
+
+    Returns:
+        [Methods] -- [GET]
+    """
+
     return jsonify('pong!')
 
 
